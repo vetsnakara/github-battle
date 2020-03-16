@@ -5,6 +5,6 @@ import App from './App'
 
 ReactDOM.render(<App />, document.querySelector('#root'))
 
-if (process.env.NODE_ENV) {
-  module.hot.accept()
-}
+// if (process.env.NODE_ENV) {
+//   module.hot.accept()
+// }

@@ -7,8 +7,8 @@ import PlayerPreview from './PlayerPreview'
 
 class Battle extends Component {
   state = {
-    playerOne: null,
-    playerTwo: null
+    playerOne: 'vetsnakara',
+    playerTwo: 'vuejs'
   }
 
   handleSubmit = (id, player) => this.setState({ [id]: player })

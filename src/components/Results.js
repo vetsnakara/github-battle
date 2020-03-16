@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+
+import Card from './Card'
+import ProfileList from './ProfileList'
+
 import queryString from 'query-string'
 
 import { battle } from '../utils/api'
@@ -33,7 +37,7 @@ class Results extends Component {
   }
 
   render () {
-    const { error, loading } = this.state
+    const { winner, loser, error, loading } = this.state
 
     if (loading) {
       return <p>Loading ...</p>
@@ -46,7 +50,7 @@ class Results extends Component {
     return (
       <>
         <div>
-          {/* <Card
+          <Card
             header={winner.score === loser.score ? 'Tie' : 'Winner'}
             subheader={`Score ${winner.score}`}
             avatar={winner.profile.avatar_url}
@@ -63,9 +67,7 @@ class Results extends Component {
             name={loser.profile.login}
           >
             <ProfileList profile={loser.profile} />
-          </Card> */}
-          <p>JSON.stringify(winner)</p>
-          <p>JSON.stringify(loser)</p>
+          </Card>
         </div>
         <Link to='/battle'>
           Reset
