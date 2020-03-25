@@ -2,8 +2,9 @@ import React from 'react'
 
 import { fetchPopularRepos } from '../utils/api'
 
-import NavLanguages from './NavLanguages'
-import ReposGrid from './ReposGrid'
+import NavLanguages from './NavLanguages/NavLanguages'
+import ReposGrid from './ReposGrid/ReposGrid'
+import Loading from './Loading'
 
 class Popular extends React.Component {
   state = {
@@ -62,21 +63,21 @@ class Popular extends React.Component {
       loading
     } = this.state
 
-    if (loading) {
-      return <p>Loading ...</p>
-    }
-
-    if (error) {
-      return <p>Something went wrong ...</p>
-    }
-
     return (
       <>
         <NavLanguages
           selected={selectedLanguage}
           onLanguageSelect={this.handleLanguageSelect}
         />
-        <ReposGrid repos={languageRepos} />
+        {
+          loading
+            ? <Loading text='Fetching Repos' />
+            : (
+              error
+                ? <p>Something went wrong ...</p>
+                : <ReposGrid repos={languageRepos} />
+            )
+        }
       </>
     )
   }

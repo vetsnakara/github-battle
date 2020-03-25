@@ -1,9 +1,14 @@
 import React from 'react'
+import cn from 'classnames'
+
+import useStyle from './styles'
 
 const NavLanguages = ({
   selected,
   onLanguageSelect
 }) => {
+  const classes = useStyle()
+
   const languages = [
     'All',
     'JavaScript',
@@ -19,15 +24,18 @@ const NavLanguages = ({
   }
 
   return (
-    <ul>
+    <ul className={classes.navList}>
       {languages.map(lang => {
-        const style = {
-          color: lang === selected ? 'red' : null
-        }
+        const navBtnClasses = cn(
+          classes.navBtn,
+          {
+            [classes.navBtnActive]: lang === selected
+          }
+        )
 
         return (
-          <li key={lang}>
-            <a style={style} onClick={e => handleClick(e, lang)}>{lang}</a>
+          <li className={classes.navItem} key={lang}>
+            <button className={navBtnClasses} onClick={e => handleClick(e, lang)}>{lang}</button>
           </li>)
       })}
     </ul>

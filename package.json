@@ -44,11 +44,13 @@
     "webpack-visualizer-plugin": "^0.1.11"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "core-js": "^3.6.4",
     "query-string": "^6.11.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-icons": "^3.9.0",
+    "react-jss": "^10.1.1",
     "react-router-dom": "^5.1.2"
   },
   "config": {
