@@ -10,7 +10,7 @@
   <a href="https://infallible-rosalind-4b617c.netlify.com" target="_blank">Github Battle</a>
 </h2>
 
-> A React-powered implementation of "soft" Hacker News client using its Firebase API
+> This project is a "Github Battle" app. You'll be able to see the most popular repos for a variety of languages as well as battle two Github users to see who has the better profile.
 
 ### 📺 Preview
   <table style="width: 100%; background-color: white"">
@@ -32,39 +32,37 @@
     <th>Dark</th>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/post-light.png"/></td>
-    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/post-dark.png"/></td>
+    <td><img src="https://raw.githubusercontent.com/vetsnakara/github-battle/master/preview/battle-light.png"/></td>
+    <td><img src="https://raw.githubusercontent.com/vetsnakara/github-battle/master/preview/battle-dark.png"/></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/user-light.png"/></td>
-    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/user-dark.png"/></td>
-  </tr>
+    <td><img src="https://raw.githubusercontent.com/vetsnakara/github-battle/master/preview/results-light.png"/></td>
+    <td><img src="https://raw.githubusercontent.com/vetsnakara/github-battle/master/preview/results-dark.png"/></td>
   </table>
 </details>
 
 ### ✨ Features
-* Use [Hacker News API](https://github.com/HackerNews/API)
+* Use [Github API](https://developer.github.com/v3/)
 * Pages:
-  * `/` - top stories
-  * `/new` - new stories
-  * `/user?id=username` - user metadata and his stories
-  * `/post?id=123456` - post metadata and related comments
+  * `/` - popular repos
+  * `/battle` - battle between two github users
+  * `/battle/results` - battle results
 * Loading indicators
 * Theme button
+* Custom Tooltips (based on render props pattern)
 
 ### 🛠️ Technologies
 * __React__ for UI rendering
-* __React Hooks__ for side effects
+* __React Hooks__ for local state and side effects
+  * class-based components are used too 🤫
 * __React Context__ for toggling light/dark theme
-* __Redux__ for state management
-* __Redux Thunk__ for API calls
 * __React Router__ for routing
 * __React JSS__ for styles and theming
 
 ### 🚀 Setup
 ``` sh
-$ git clone https://github.com/vetsnakara/hacker-news-clone.git
-$ cd hacker-news-clone
+$ git clone https://github.com/vetsnakara/github-battle.git
+$ cd github-battle
 $ npm install
 $ npm start
 ```
