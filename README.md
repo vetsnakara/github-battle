@@ -1,4 +1,4 @@
-<a href="https://codesandbox.io/s/github/vetsnakara/hacker-news-clone/tree/master/?fontsize=14&hidenavigation=1&theme=dark">
+<a href="https://codesandbox.io/s/github/vetsnakara/github-battle/tree/master/?fontsize=14&hidenavigation=1&theme=dark">
   <img height="20" alt="Edit github-battle" src="https://codesandbox.io/static/img/play-codesandbox.svg">
 </a>
 
@@ -7,7 +7,7 @@
 </a>
 
 <h2>
-  <a href="https://sleepy-almeida-a073df.netlify.com/" target="_blank">Hacker News client</a>
+  <a href="https://infallible-rosalind-4b617c.netlify.com" target="_blank">Github Battle</a>
 </h2>
 
 > A React-powered implementation of "soft" Hacker News client using its Firebase API
@@ -19,8 +19,8 @@
     <th>Dark</th>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/posts-light.png"/></td>
-    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/posts-dark.png"/></td>
+    <td><img src="https://raw.githubusercontent.com/vetsnakara/github-battle/master/preview/popular-light.png"/></td>
+    <td><img src="https://raw.githubusercontent.com/vetsnakara/github-battle/master/preview/popular-dark.png"/></td>
   </tr>
   </table>
 
