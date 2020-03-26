@@ -1,45 +1,74 @@
-<h1 align="center">
-  Github Buttle - <a href="https://tm.dev/react-course-project/" target="_blank">Demo</a>
-</h1>
+<a href="https://codesandbox.io/s/github/vetsnakara/hacker-news-clone/tree/master/?fontsize=14&hidenavigation=1&theme=dark">
+  <img height="20" alt="Edit github-battle" src="https://codesandbox.io/static/img/play-codesandbox.svg">
+</a>
 
-<div align="center">
-  <a href="https://standardjs.com">
-    <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg"/>
-  </a>
-</div>
+<a href="https://standardjs.com">
+  <img height="20" src="https://img.shields.io/badge/code_style-standard-brightgreen.svg"/>
+</a>
 
-> Short project description here!
+<h2>
+  <a href="https://sleepy-almeida-a073df.netlify.com/" target="_blank">Hacker News client</a>
+</h2>
 
-<div align="center">
-  <img width="300" src="https://tylermcginnis.com/tylermcginnis_glasses-300.png" alt="TylerMcGinnis.com Logo"/>
-</div>
+> A React-powered implementation of "soft" Hacker News client using its Firebase API
 
-## 📝 Description
-Add more general information about project. 
+### 📺 Preview
+  <table style="width: 100%; background-color: white"">
+  <tr>
+    <th>Light</th>
+    <th>Dark</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/posts-light.png"/></td>
+    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/posts-dark.png"/></td>
+  </tr>
+  </table>
 
-## 📺 Preview
-<p align="center">
-  <img width="700" align="center" src="https://user-images.githubusercontent.com/9840435/60266022-72a82400-98e7-11e9-9958-f9004c2f97e1.gif" alt="demo"/>
-</p>
+<details>
+<summary>other views 👀</summary>
+  <table style="width: 100%; background-color: white"">
+  <tr>
+    <th>Light</th>
+    <th>Dark</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/post-light.png"/></td>
+    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/post-dark.png"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/user-light.png"/></td>
+    <td><img src="https://raw.githubusercontent.com/vetsnakara/hacker-news-clone/master/preview/user-dark.png"/></td>
+  </tr>
+  </table>
+</details>
 
-## ✨ Features
-* Feature #1
-* Feature #2
-* Feature #3
+### ✨ Features
+* Use [Hacker News API](https://github.com/HackerNews/API)
+* Pages:
+  * `/` - top stories
+  * `/new` - new stories
+  * `/user?id=username` - user metadata and his stories
+  * `/post?id=123456` - post metadata and related comments
+* Loading indicators
+* Theme button
 
-## 🛠️ Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+### 🛠️ Technologies
+* __React__ for UI rendering
+* __React Hooks__ for side effects
+* __React Context__ for toggling light/dark theme
+* __Redux__ for state management
+* __Redux Thunk__ for API calls
+* __React Router__ for routing
+* __React JSS__ for styles and theming
 
-## 🚀 Setup
+### 🚀 Setup
 ``` sh
-$ cd ../lorem
+$ git clone https://github.com/vetsnakara/hacker-news-clone.git
+$ cd hacker-news-clone
 $ npm install
 $ npm start
 ```
 
-## 👷 Author
+### 👷 Author
 **Konstantin Arakantsev**
-- Twitter: [@FranckAbgrall](https://twitter.com/FranckAbgrall)
-- Github: [@kefranabg](https://github.com/kefranabg)
+- Github: [@vetsnakara](https://github.com/vetsnakara)
